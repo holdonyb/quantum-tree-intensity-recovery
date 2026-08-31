@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.md text eol=lf
+*.lean text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.sha256 text eol=lf

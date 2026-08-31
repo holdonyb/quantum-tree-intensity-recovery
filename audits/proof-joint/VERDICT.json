@@ -1,0 +1,20 @@
+{
+  "task_id": "task-tree-proof-joint-audit",
+  "version": 1,
+  "attempt": 2,
+  "task_status": "DONE",
+  "branch_verdict": "PROVED",
+  "proof_node": {
+    "node_id": "target",
+    "version": 1
+  },
+  "frozen_proof_sha256": "A51C2A4A2A048050458CA4E18002BE52B9E99D87973F90238DB66F1A1E64D174",
+  "theorem_sha256": "0C32839BAD40563859E3CF4DBF2AB7128F005B393D29F8A91F7CDD57C66A032C",
+  "theorem_v1_proof_joints": "closed",
+  "stability_corollary_proof_joints": "closed_separately",
+  "open_issues": [],
+  "maturity_recommendation": "M6",
+  "integration_authority": "controller",
+  "overall_run_status": "RUNNING",
+  "recommended_successor_task": "distinct theorem-statement and quantifier audit"
+}

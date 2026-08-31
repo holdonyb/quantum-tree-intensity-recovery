@@ -1,0 +1,37 @@
+name: Verification
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lean:
+    name: Lean 4 kernel checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+      - name: Axiom audit
+        working-directory: lean
+        run: lake env lean AxiomAudit.lean
+      - name: Reject proof placeholders and project axioms
+        shell: bash
+        run: |
+          if grep -R -n -E '\b(sorry|admit)\b|^[[:space:]]*axiom[[:space:]]' \
+              --include='*.lean' \
+              lean/QuantumTree lean/QuantumTree.lean; then
+            exit 1
+          fi
+
+  frozen-proof:
+    name: Frozen manuscript identity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify SHA-256
+        run: sha256sum --check paper/TREE_EXTENSION_PROOF.sha256

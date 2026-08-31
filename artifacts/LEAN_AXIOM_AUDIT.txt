@@ -1,0 +1,8 @@
+'QuantumTree.correctedPhase_constant' depends on axioms: [propext, Quot.sound]
+'QuantumTree.eq_of_choose_two_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantumTree.Turnpike.orientedPoints_direct_or_reflected_of_mixed_distance_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantumTree.bipartiteMatrix_involution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantumTree.bipartiteState_involution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantumTree.intensity_movie_bipartite_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantumTree.n2Flip_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantumTree.n2Flip_fixed_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
