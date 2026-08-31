@@ -17,7 +17,7 @@ Lean verification layer for publication-oriented development.
 - Placeholder/custom-axiom source scan: clean.
 - Principal-theorem axiom audit: only `propext`, `Quot.sound`, and
   `Classical.choice`.
-- Private GitHub repository: `holdonyb/quantum-tree-intensity-recovery`.
+- Public GitHub repository: `holdonyb/quantum-tree-intensity-recovery`.
 - Initial remote GitHub Actions run: passed both Lean and frozen-proof jobs.
 
 ## Validation
